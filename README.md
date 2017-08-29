@@ -1,7 +1,7 @@
 JAutosub is a pre-package, ready to use version of <a href="https://github.com/agermanidis/autosub">Autosub 0.3.12</a> with a Java GUI.
 
-It can be used both to generate <bold>automatic subtitles</bold> to video/audio files or as a <bold>audio transcription assistant tool.</bold> 
-Internet connection is REQUIRED because it uses the <a href="https://cloud.google.com/speech/">Google Cloud Speech Server</a> for the job.
+It can be used both to generate <bold>automatic subtitles</bold> to video/audio files or as a <bold>audio transcription assistant tool.</bold> <br>
+Internet connection is REQUIRED because it uses the <a href="https://cloud.google.com/speech/">Google Cloud Speech Server</a> for the job.<br>
 <bold>IMPORTANT: </bold> For best results the audio file should have high quality/clarity. 
 
 <img src="https://github.com/raryelcostasouza/JAutosub/blob/master/jautosub-screenshot.png" height="300">
