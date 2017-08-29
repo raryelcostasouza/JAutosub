@@ -10,7 +10,7 @@ Internet connection is REQUIRED because it uses the <a href="https://cloud.googl
 
 <img src="https://github.com/raryelcostasouza/JAutosub/blob/master/jautosub-screenshot.png" height="300">
 
-<h1>For Users - Download the app</h1>
+<h1>For Users - Download the Windows app</h1>
 v1.0 - 29/08/2017
 <ul>
 
