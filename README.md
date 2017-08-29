@@ -1,4 +1,4 @@
-JAutosub is a pre-package, ready to use version of <a href="https://github.com/agermanidis/autosub">Autosub 0.3.12</a> with a Java GUI.
+JAutosub is a pre-package, ready to use Windows version of <a href="https://github.com/agermanidis/autosub">Autosub 0.3.12</a> with a Java GUI.
 
 It can be used both to generate <b>automatic subtitles</b> to video/audio files or as a <b>audio transcription assistant tool.</b> 
 <br>
