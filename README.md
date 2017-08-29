@@ -1,6 +1,6 @@
 JAutosub is a pre-package, ready to use version of <a href="https://github.com/agermanidis/autosub">Autosub 0.3.12</a> with a Java GUI.
 
-<img src="https://github.com/raryelcostasouza/JAutosub/blob/master/jautosub-screenshot.png">
+<img src="https://github.com/raryelcostasouza/JAutosub/blob/master/jautosub-screenshot.png" height="200">
 
 <h2>Download the app</h2>
 v1.0 - 29/08/2017
