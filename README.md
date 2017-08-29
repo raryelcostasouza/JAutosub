@@ -25,5 +25,5 @@ v1.0 - 29/08/2017
 <li> The final <a href="https://github.com/raryelcostasouza/JAutosub/blob/master/autosub_modified.py">autosub_modified.py<a> with all the modifications needed for packaging on the pyinstaller and <a href="https://github.com/raryelcostasouza/JAutosub/blob/master/patch-autosub-0.3.12.patch"> the respective patch for the autosub 0.3.12 </a> </li>
 </ul>
 
-<h2>How to compile/run (for developers)</h2>
+<h2>For Developers - How to compile/run</h2>
 Extract and open the <a href="https://github.com/raryelcostasouza/JAutosub/blob/master/JAutoSub-netbeans-project.zip">netbeans project</a> on <a href="https://netbeans.org/">Netbeans</a> and run it.
