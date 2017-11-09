@@ -49,22 +49,13 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
         // for jtaStatus auto scrolling when more text is appended
         ((DefaultCaret) jtaStatus.getCaret()).setUpdatePolicy(DefaultCaret.OUT_BOTTOM);
         jpbConversion.setVisible(false);
-
+        pack();
         addWindowListener(new WindowAdapter()
         {
             //clear tmp files before leaving
             @Override
             public void windowClosing(WindowEvent e)
             {
-                try
-                {
-                    //kills any running unfinished autosub processes
-                    Runtime.getRuntime().exec("TASKKILL /F /IM autosub_app.exe");
-                }
-                catch (IOException ex)
-                {
-                    JOptionPane.showMessageDialog(null, "Unable to stop autosub process.", "Error!", JOptionPane.ERROR_MESSAGE);
-                }
                 //Util.clearTMP();
                 System.exit(0);
             }
@@ -123,7 +114,6 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("JAutosub - v1.0 (Powered by Autosub)");
-        setPreferredSize(new java.awt.Dimension(800, 730));
 
         jpMainSouth.setBorder(javax.swing.BorderFactory.createTitledBorder("Conversion Progress:"));
         jpMainSouth.setPreferredSize(new java.awt.Dimension(620, 100));
@@ -284,7 +274,8 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
         getContentPane().add(jpMainNorth, java.awt.BorderLayout.NORTH);
 
         jpMainCenter.setBorder(javax.swing.BorderFactory.createTitledBorder("Automatic Transcription Output"));
-        jpMainCenter.setPreferredSize(new java.awt.Dimension(12, 27));
+        jpMainCenter.setMinimumSize(new java.awt.Dimension(213, 220));
+        jpMainCenter.setPreferredSize(new java.awt.Dimension(12, 200));
         jpMainCenter.setLayout(new java.awt.BorderLayout());
 
         jtpOutput.setName(""); // NOI18N
@@ -347,7 +338,7 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
             jta = new JTextArea(text);
             jta.setLineWrap(true);
             jta.setWrapStyleWord(true);
-            jta.setFont(jta.getFont().deriveFont(22f));
+            jta.setFont(jta.getFont().deriveFont(16f));
 
             jsp = new JScrollPane(jta);
 
@@ -589,7 +580,7 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
 
         // html content
         JEditorPane ep = new JEditorPane("text/html", "<html><body style=\"" + styleCSS + "\">"
-                + "JAutosub is a pre-packaged version of Autosub 0.3.12 with a Java GUI<br><br>"
+                + "JAutosub is a Java GUI for Autosub intended to support audio transcription<br><br>"
                 + "<a href=\"https://github.com/agermanidis/autosub\">Autosub</a> is a command-line utility for auto-generating subtitles for any video/audio file<br>"
                 + "using the <a href=\"https://cloud.google.com/speech/\">Google Cloud Speech API</a> <br>"
                 + "</body></html>");
