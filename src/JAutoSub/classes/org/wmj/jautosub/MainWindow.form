@@ -34,7 +34,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="0"/>
-    <Property name="title" type="java.lang.String" value="JAutosub - v1.0 (Powered by Autosub)"/>
+    <Property name="title" type="java.lang.String" value="JAutosub - v1.1 (Powered by Autosub)"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>

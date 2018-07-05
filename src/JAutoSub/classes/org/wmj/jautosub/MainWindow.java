@@ -113,7 +113,7 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
         jbAboutAutosub = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
-        setTitle("JAutosub - v1.0 (Powered by Autosub)");
+        setTitle("JAutosub - v1.1 (Powered by Autosub)");
 
         jpMainSouth.setBorder(javax.swing.BorderFactory.createTitledBorder("Conversion Progress:"));
         jpMainSouth.setPreferredSize(new java.awt.Dimension(620, 100));
