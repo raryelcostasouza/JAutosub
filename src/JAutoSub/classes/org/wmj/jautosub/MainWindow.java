@@ -1,7 +1,17 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+   (C) 2018 Raryel C. Souza
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 package org.wmj.jautosub;
 
@@ -33,13 +43,10 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.text.DefaultCaret;
 import org.wmj.jautosub.gui.ButtonTabComponent;
 
-/**
- *
- * @author Adhipanyo
- */
 public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
 {
 
+    private Process procAutosub;
     /**
      * Creates new form MainWindow
      */
@@ -56,7 +63,7 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
             @Override
             public void windowClosing(WindowEvent e)
             {
-                //Util.clearTMP();
+                procAutosub.destroyForcibly();
                 System.exit(0);
             }
         });
@@ -406,7 +413,7 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
                     File outputFileSRT, outputFileTXT;
                     boolean haveConversionError;
                     String inputFileName, outputFileName, cmdPart1, cmdPart2, cmd, langSelected, strTXT, langCode;
-                    Process p;
+                    Process procAutosub;
 
                     //extract the language code from the selected language string
                     langSelected = (String) jcbLanguage.getSelectedItem();
@@ -445,17 +452,17 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
                                 outputFileTXT.delete();
                             }
 
-                            p = Runtime.getRuntime().exec(cmd, null, pAutosub.toFile());
-
+                            procAutosub = Runtime.getRuntime().exec(cmd, null, pAutosub.toFile());
+                            
                             //threads to collect process output
-                            StreamGobbler errorGobbler = new StreamGobbler(p.getErrorStream(), "ERROR", jtaStatus);
-                            StreamGobbler outputGobbler = new StreamGobbler(p.getInputStream(), "OUTPUT", jtaStatus);
+                            StreamGobbler errorGobbler = new StreamGobbler(procAutosub.getErrorStream(), "ERROR", jtaStatus);
+                            StreamGobbler outputGobbler = new StreamGobbler(procAutosub.getInputStream(), "OUTPUT", jtaStatus);
 
                             //start auxiliary process output reading threads
                             errorGobbler.start();
                             outputGobbler.start();
 
-                            processExit = p.waitFor();
+                            processExit = procAutosub.waitFor();
                             //if the output file does not exist or the process returned a value
                             //different than 0, an error occured
                             if (!outputFileSRT.exists() || processExit != 0)
