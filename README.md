@@ -17,8 +17,8 @@ IMPORTANT: The <b>accuracy</b> of the result can vary a lot, depending on many f
 <h1>For Users - Download the Windows app</h1>
 v1.1 - 04/07/2018
 <ul>
-<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v1.1/JAutosub-Setup.exe">Installable Version</a></li>
-<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v1.1/JAutosub-Portable.zip">Portable Version</a></li>
+<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v1.1/JAutosub-v1.1-setup.exe">Installable Version</a></li>
+<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v1.1/JAutosub-v1.1-portable.zip">Portable Version</a></li>
 </ul>
 Changes:
 <ul>
@@ -42,4 +42,9 @@ v1.0 - 29/08/2017
 </ul>
 
 <h2>For Developers - How to compile/run</h2>
+Requirements:
+<ul>
+<li><a href="https://netbeans.apache.org/download/index.html">Apache Netbeans 9 or newer</a> - </li>
+<li>JDK 9 or newer</li>
+</ul>
 Extract and open the <a href="https://github.com/raryelcostasouza/JAutosub/blob/master/JAutoSub-netbeans-project.zip">netbeans project</a> on <a href="https://netbeans.org/">Netbeans</a> and run it.
