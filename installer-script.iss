@@ -28,11 +28,11 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "C:\Users\Adhipanyo\Documents\NetBeansProjects\JAutosub\dist\jlink\JAutosub\JAutosub.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Adhipanyo\Documents\NetBeansProjects\JAutosub\dist\jlink\JAutosub\bin\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\Adhipanyo\Documents\NetBeansProjects\JAutosub\dist\jlink\JAutosub\conf\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\Adhipanyo\Documents\NetBeansProjects\JAutosub\dist\jlink\JAutosub\include\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\Adhipanyo\Documents\NetBeansProjects\JAutosub\dist\jlink\JAutosub\lib\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\Adhipanyo\Documents\NetBeansProjects\JAutosub\dist\jlink\JAutosub\legal\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Adhipanyo\Documents\NetBeansProjects\JAutosub\dist\jlink\JAutosub\bin\*"; DestDir: "{app}\bin"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Adhipanyo\Documents\NetBeansProjects\JAutosub\dist\jlink\JAutosub\conf\*"; DestDir: "{app}\conf"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Adhipanyo\Documents\NetBeansProjects\JAutosub\dist\jlink\JAutosub\include\*"; DestDir: "{app}\include"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Adhipanyo\Documents\NetBeansProjects\JAutosub\dist\jlink\JAutosub\lib\*"; DestDir: "{app}\lib"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Adhipanyo\Documents\NetBeansProjects\JAutosub\dist\jlink\JAutosub\legal\*"; DestDir: "{app}\legal"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
