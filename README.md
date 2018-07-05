@@ -16,9 +16,8 @@ IMPORTANT: The <b>accuracy</b> of the result can vary a lot, depending on many f
 
 <h1>For Users - Download the Windows app</h1>
 v1.1 - 04/07/2018
-<ul>
-<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v1.1/JAutosub-v1.1-setup.exe">Installable Version</a></li>
-<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v1.1/JAutosub-v1.1-portable.zip">Portable Version</a></li>
+<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v.1.1/JAutosub-v1.1-setup.exe">Installable Version</a></li>
+<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v.1.1/JAutosub-v1.1-portable.zip">Portable Version</a></li>
 </ul>
 Changes:
 <ul>
