@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://www.netbeans.org/ns/project/1">
-    <type>org.netbeans.modules.java.j2seproject</type>
+    <type>org.netbeans.modules.java.j2semodule</type>
     <configuration>
-        <buildExtensions xmlns="http://www.netbeans.org/ns/ant-build-extender/1">
-            <extension file="build-native.xml" id="j2sedeploy"/>
-        </buildExtensions>
-        <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
-            <name>JAutoSub</name>
+        <data xmlns="http://www.netbeans.org/ns/j2se-modular-project/1">
+            <name>JAutosub</name>
+            <explicit-platform explicit-source-supported="true"/>
             <source-roots>
-                <root id="src.dir"/>
+                <root id="src.dir" pathref="src.dir.path"/>
             </source-roots>
             <test-roots>
-                <root id="test.src.dir"/>
+                <root id="test.src.dir" pathref="test.src.dir.path"/>
             </test-roots>
         </data>
     </configuration>
