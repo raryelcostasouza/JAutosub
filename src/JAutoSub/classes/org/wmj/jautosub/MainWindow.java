@@ -47,6 +47,7 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
 {
 
     private Process procAutosub;
+
     /**
      * Creates new form MainWindow
      */
@@ -63,7 +64,11 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
             @Override
             public void windowClosing(WindowEvent e)
             {
-                procAutosub.destroyForcibly();
+                if (procAutosub != null && procAutosub.isAlive())
+                {
+                    procAutosub.destroyForcibly();
+                }
+
                 System.exit(0);
             }
         });
@@ -453,7 +458,7 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
                             }
 
                             procAutosub = Runtime.getRuntime().exec(cmd, null, pAutosub.toFile());
-                            
+
                             //threads to collect process output
                             StreamGobbler errorGobbler = new StreamGobbler(procAutosub.getErrorStream(), "ERROR", jtaStatus);
                             StreamGobbler outputGobbler = new StreamGobbler(procAutosub.getInputStream(), "OUTPUT", jtaStatus);
