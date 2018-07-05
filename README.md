@@ -47,4 +47,9 @@ Requirements:
 <li><a href="https://netbeans.apache.org/download/index.html">Apache Netbeans 9 or newer</a> - </li>
 <li>JDK 9 or newer</li>
 </ul>
-Extract and open the <a href="https://github.com/raryelcostasouza/JAutosub/blob/master/JAutoSub-netbeans-project.zip">netbeans project</a> on <a href="https://netbeans.org/">Netbeans</a> and run it.
+
+<ol>
+<li>Clone/Download git repository</li>
+<li>Extract and open the netbeans project</li>
+<li>Run it</li>
+</ol>
