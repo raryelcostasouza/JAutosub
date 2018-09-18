@@ -15,15 +15,16 @@ IMPORTANT: The <b>accuracy</b> of the result can vary a lot, depending on many f
 <img src="https://github.com/raryelcostasouza/JAutosub/blob/master/jautosub-screenshot.png" height="300">
 
 <h1>For Users - Download the Windows app</h1>
-v1.1 - 04/07/2018
-<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v.1.1/JAutosub-v1.1-setup.exe">Installable Version</a></li>
-<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v.1.1/JAutosub-v1.1-portable.zip">Portable Version</a></li>
+v1.1.1 - 18/09/2018
+<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v1.1.1/JAutosub-v1.1.1-setup.exe">Installable Version</a></li>
+<li><a href="https://github.com/raryelcostasouza/JAutosub/releases/download/v1.1.1/JAutosub-v1.1.1-portable.zip">Portable Version</a></li>
 </ul>
 Changes:
 <ul>
 <li>Migrate to Java 10 Modular Project (smaller app package)</li>
 <li>JAutosub License change from MIT to GPL v3 (Autosub is licensed under MIT License)</li>
 <li>When closing the app force to end any remaining autosub subprocess</li>
+<li>Fixed bug: not able to find autosub_app.exe (wrong path)
 </ul>
 
 v1.0 - 29/08/2017
