@@ -696,7 +696,7 @@ public class MainWindow extends javax.swing.JFrame implements HyperlinkListener
 
     private StringBuffer styleCSS;
     private ArrayList<JTextArea> listJTA = new ArrayList<>();
-    private Path pAutosub = Paths.get(System.getProperty("user.dir")).resolve("autosub");
+    private Path pAutosub = Paths.get(System.getProperty("user.dir")).resolve("bin/autosub");
     private FileNameExtensionFilter extFilter;
     private Path pOutputFolder;
     private File[] arraySelectedFiles;
