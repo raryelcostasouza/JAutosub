@@ -1,3 +1,5 @@
+NOTE: THIS PROJECT IS DISCONTINUED. Recommended to use the new <a href="https://github.com/raryelcostasouza/pyTranscriber">pyTranscriber</a> instead... better perfomance and reliability.
+
 JAutosub is an Windows app that can be used to generate <b>automatic transcription / automatic subtitles </b> for audio/video files  through a friendly graphical user interface. For the hard work of speech recognition it is made use of the <a href="https://cloud.google.com/speech/">Google Speech Recognition API</a>.
 <br>
 <br>
